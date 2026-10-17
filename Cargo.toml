@@ -1,0 +1,25 @@
+[package]
+name = "blazing-radix"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.88"
+description = "Adaptive hybrid radix sorting for integers and f32 with reusable scratch memory"
+authors = ["Max Tikhomirov"]
+repository = "https://github.com/metacircu1ar/blazing-radix"
+documentation = "https://docs.rs/blazing-radix"
+readme = "README.md"
+license = "MIT"
+keywords = ["radix-sort", "sorting", "integers", "floats", "performance"]
+categories = ["algorithms"]
+include = ["src/**", "tests/**", "Cargo.toml", "Cargo.lock", "README.md", "LICENSE"]
+publish = ["crates-io"]
+
+[dependencies]
+
+[workspace]
+
+[lints.rust]
+unsafe_op_in_unsafe_fn = "deny"
+
+[lints.clippy]
+undocumented_unsafe_blocks = "deny"
